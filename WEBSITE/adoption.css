@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80");
+  background-size: 1700px 2000px;
+}
+
+header {
+	background-color: #0f0f0f;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+	text-decoration: underline;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.gradient{
+	
+	background-image: linear-gradient(rgba(11, 11, 11, 0.5),rgba(136, 182, 222, 0.5));
+}
+h1 {
+	margin: 0;
+	font-size: 36px;
+}
+
+main {
+	padding: 20px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-top: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+	margin-top: 10px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+.adopt{
+    margin-top: 20px;
+    margin-left: 630px;
+    margin-bottom: 10px;
+}
+.bttn{
+    border: 4px solid rgb(11, 11, 11);
+    padding: 10px 30px;
+    color:rgb(254, 253, 254);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 40px;
+	font-size: 20px;
+}
+.select li a:hover{
+    border: 2px solid rgb(243, 236, 236);
+    background-image:linear-gradient(rgba(243, 236, 236, 0.5),rgba(246, 249, 251, 0.5));
+}
+.adopt a:hover{
+    background-color:rgb(9, 9, 9);
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff
+  }
+  div.register{
+    background-color: rgba(253, 248, 248, 0.3);
+    width: 1400px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px soid rgba(255,255,255,0.3);
+    box-shadow: 2px 2px 15px
+    rgba (0,0,0,0.3);
+    color: #000000;
+}

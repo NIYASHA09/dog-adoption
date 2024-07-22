@@ -1,0 +1,89 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #ced4bf;
+	margin: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.gradient{
+	
+	background-image: linear-gradient(rgba(238, 253, 66, 0.67),rgba(225, 158, 82, 0.5));
+}
+h1 {
+	margin: 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 20px;
+	font-size: 18px;
+}
+.select li a:hover{
+    border: 2px solid rgb(243, 236, 236);
+    background-image:linear-gradient(rgba(243, 236, 236, 0.5),rgba(246, 249, 251, 0.5));
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a.active {
+	color: #FBC02D;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#contact {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px #ccc;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+button[type="submit"] {
+	background-color: #FBC02D;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+	background-color: #FFEB3B;
+}

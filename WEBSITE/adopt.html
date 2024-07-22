@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Adopt a Dog | Dog Adoption Website</title>
+	<link rel="stylesheet" href="adopt.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,100&display=swap" rel="stylesheet">
+<link rel="website icon" type="png"
+    href="logo.png">
+	
+</head>
+<body>
+	<header>
+		<div class="overlay"></div>
+		<nav>
+			<h1>ADOPT</h1>
+			<div class="search">
+				<input type="text" name="q" id="find" placeholder="🔍search here...." onkeyup="search()">
+			</div>
+			<ul>
+				<li><a href="website.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li class="cart">
+					<a href="cart.html">
+						<ion-icon name="basket">Cart</ion-icon>Cart
+					</a>
+				</li>
+			</ul>
+	</nav>
+	</header>
+	<h3>Get a Dog.Get a Life!</h3>
+	<main>
+		<section class="dog-listing">
+			<div id="item1">
+			<h2>Labrador Retriever</h2>
+			<img src="https://hips.hearstapps.com/hmg-prod/images/labrador-puppy-royalty-free-image-1626252338.jpg?crop=0.667xw:1.00xh;0.173xw,0&resize=2048:*" alt="Dog Image" onclick="toggleSpecs(1)">
+			<ul class="specs" id="specs1">
+				<li><strong>Breed:</strong> Labrador Retriever</li>
+				<li><strong>Gender:</strong> Male/Female</li>
+				<li><strong>Age:</strong> 2</li>
+				<li><strong>Weight:</strong>33 lbs</li>
+				<li><strong>Color:</strong>cream</li>
+				<li><h4><strong>PRICE:</strong></h4>22,000/-</li>
+			</ul>
+			</div>
+			<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+		</section>
+		<section class="dog-listing">
+			<div id="item2">
+			<h2>German Shephard</h2>
+			<img src="https://images.saymedia-content.com/.image/t_share/MTk2NzIzMTQ2NzMxMTAzMjUw/11-dogs-like-german-shepherd.png" alt="Dog Image" onclick="toggleSpecs(2)">
+			<ul class="specs" id="specs2">
+				<li><strong>Breed:</strong>German Shephard </li>
+				<li><strong>Gender:</strong> Male/Female</li>
+				<li><strong>Age:</strong> 1</li>
+				<li><strong>Weight:</strong> 22 lbs</li>
+				<li><strong>Color:</strong>brown and black</li>
+				<li><h4><strong>PRICE:</strong></h4>32,000/-</li>
+			</ul>
+			</div>
+			<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+		</section>
+		<section class="dog-listing">
+			<div id="item3">
+			<h2>Poodle</h2>
+			<img src="https://images.unsplash.com/photo-1605244863941-3a3ed921c60d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9vZGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="Dog Image" onclick="toggleSpecs(3)">
+			<ul class="specs" id="specs3">
+				<li><strong>Breed:</strong> Poodle</li>
+				<li><strong>Gender:</strong> Male/Female</li>
+				<li><strong>Age:</strong> 0</li>
+				<li><strong>Weight:</strong> 17 lbs</li>
+				<li><strong>Color:</strong> Furry in differnt colours</li>
+				<li><h4><strong>PRICE:</strong></h4>30,000/-</li>
+			</ul>
+			</div>
+			<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+		</section>
+		<section class="dog-listing">
+			<div id="item4">
+			<h2>Shiba Inu</h2>
+			<img src="https://www.akc.org/wp-content/uploads/2017/11/Shiba-Inu-puppy-standing-outdoors.jpg" alt="Dog Image" onclick="toggleSpecs(4)">
+			<ul class="specs" id="specs4">
+				<li><strong>Breed:</strong>Shiba Inu </li>
+				<li><strong>Gender:</strong> Male/Female</li>
+				<li><strong>Age:</strong> 1</li>
+				<li><strong>Weight:</strong> 21 lbs</li>
+				<li><strong>Color:</strong>Orange and red</li>
+				<li><h4><strong>PRICE:</strong></h4>55,000/-</li>
+			</ul>
+			</div>
+			<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+		</section>
+		
+		<section class="dog-listing">
+			<div id="item5">
+			<h2>Golden Retriever</h2>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXAcXyjlFtWB7WzA6CwjqCj-GgeyzhkdYmfw&usqp=CAU" alt="Dog Image" onclick="toggleSpecs(5)">
+			<ul class="specs" id="specs5">
+				<li><strong>Breed:</strong> Golden Retriever </li>
+				<li><strong>Gender:</strong> Male/Female</li>
+				<li><strong>Age:</strong>0</li>
+				<li><strong>Weight:</strong> 18 lbs</li>
+				<li><strong>Color:</strong>Dark Golden and Creame</li>
+				<li><h4><strong>PRICE:</strong></h4>25,000/-</li>
+			</ul>
+			</div>
+			<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+		</section>
+		<section class="dog-listing">
+			<div id="item6">
+			<h2>Bulldog</h2>
+			<img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcf-images.us-east-1.prod.boltdns.net%2Fv1%2Fstatic%2F6157254766001%2F8aa1d9a7-88cf-4e4c-aefb-5f704bfb0225%2F302ed024-7657-4258-9da2-d5233a9d529c%2F1280x720%2Fmatch%2Fimage.jpg" alt="Dog Image" onclick="toggleSpecs(6)">
+			<ul class="specs" id="specs6">
+				<li><strong>Breed:</strong> Bulldog </li>
+				<li><strong>Gender:</strong> Male/Female</li>
+				<li><strong>Age:</strong>1</li>
+				<li><strong>Weight:</strong> 55 lbs</li>
+				<li><strong>Color:</strong>Red, Fawn, White</li>
+				<li><h4><strong>PRICE:</strong></h4>25,000/-</li>
+			</ul>
+			</div>
+			<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+		</section>
+		<section class="dog-listing">
+			<div id="item7">
+			<h2>Beagle</h2>
+			<img src="https://www.purina.co.uk/sites/default/files/2021-02/BREED%20Hero_0009_beagle_0.jpg" alt="Dog Image" onclick="toggleSpecs(7)">
+			<ul class="specs" id="specs7">
+				<li><strong>Breed:</strong> Beagle </li>
+				<li><strong>Gender:</strong> Male/Female</li>
+				<li><strong>Age:</strong>1</li>
+				<li><strong>Weight:</strong> 25 lbs</li>
+				<li><strong>Color:</strong>Lemon and White, Tricolor</li>
+				<li><h4><strong>PRICE:</strong></h4>45,000/-</li>
+			</ul>
+			</div>
+			<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+		</section>
+		<section class="dog-listing">
+			<div id="item8">
+			<h2>Yorkshire Terrier</h2>
+			<img src="https://www.akc.org/wp-content/uploads/2017/11/Yorkshire-Terrier-standing-outdoors-on-a-sunny-day.jpg" alt="Dog Image" onclick="toggleSpecs(8)">
+			<ul class="specs" id="specs8">
+				<li><strong>Breed:</strong> Yorkshire Terrier </li>
+				<li><strong>Gender:</strong> Male/Female</li>
+				<li><strong>Age:</strong>0</li>
+				<li><strong>Weight:</strong> 10 lbs</li>
+				<li><strong>Color:</strong>Blue & Tan, Blue & Gold, Black & Gold</li>
+				<li><h4><strong>PRICE:</strong></h4>90,000/-</li>
+			</ul>
+			</div>
+			<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+		</section>
+		<section class="dog-listing">
+			<div id="item9">
+			<h2>Boxer</h2>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2DR1MC5wQ6sQzHbT_rvLNqos6NaPQQHsEvg&usqp=CAU" onclick="toggleSpecs(9)">
+			<ul class="specs" id="specs9">
+				<li><strong>Breed:</strong> Boxer </li>
+				<li><strong>Gender:</strong> Male/Female</li>
+				<li><strong>Age:</strong>1</li>
+				<li><strong>Weight:</strong> 60  lbs</li>
+				<li><strong>Color:</strong>White , Brindle, Frawn</li>
+				<li><h4><strong>PRICE:</strong></h4>20,000/-</li>
+			</ul>
+			</div>
+			<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+		</section>
+	<section class="dog-listing">
+		<div id="item10">
+		<h2>Siberian Huskey</h2>
+		<img src="https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-08/Siberian%20Husky2.jpg?h=6d46f7d6&itok=NuR0G5zt" onclick="toggleSpecs(10)">
+		<ul class="specs" id="specs10">
+			<li><strong>Breed:</strong> Siberian Huskey </li>
+			<li><strong>Gender:</strong> Male/Female</li>
+			<li><strong>Age:</strong>1</li>
+			<li><strong>Weight:</strong> 40  lbs</li	>
+			<li><strong>Color:</strong>White , Black and Tan</li>
+			<li><h4><strong>PRICE:</strong></h4>30,000/-</li>
+		</ul>
+		</div>
+		<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+	</section>
+	<section class="dog-listing">
+		<div id="item11">
+		<h2> Dachshund</h2>
+		<img src="https://kc-media-cdn-live.azureedge.net/cache/8/0/8/2/2/0/808220a68931d7978a70a3799d34b9a01db10340.jpg" alt="Dog Image" onclick="toggleSpecs(11)">
+		<ul class="specs" id="specs11">
+			<li><strong>Breed:</strong> Dachshund </li>
+			<li><strong>Gender:</strong> Male/Female</li>
+			<li><strong>Age:</strong>1</li>
+			<li><strong>Weight:</strong> 20 lbs</li>
+			<li><strong>Color:</strong>Red and Creame</li>
+			<li><h4><strong>PRICE:</strong></h4>85,000/-</li>
+		</ul>
+		</div>
+		<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+	</section>
+		<section class="dog-listing">
+			<div id="item12">
+		<h2> Dalmatians</h2>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIzi8P6XavVIfTpXTTBG4OEpgQT11HJxUhw&usqp=CAU" alt="Dog Image" onclick="toggleSpecs(12)">
+		<ul class="specs" id="specs12">
+			<li><strong>Breed:</strong> Dalmatians </li>
+			<li><strong>Gender:</strong> Male/Female</li>
+			<li><strong>Age:</strong>1</li>
+			<li><strong>Weight:</strong> 20 lbs</li>
+			<li><strong>Color:</strong>Red and Creame</li>
+			<li><h4><strong>PRICE:</strong></h4>50,000/-</li>
+		</ul>
+			</div>
+		<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+	</section>
+	<section class="dog-listing">
+		<div id="item13">
+		<h2> Chow Chow</h2>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrpiuBvg2sNjnAa3gAF5_1yLwiZcijl9jpvw&usqp=CAU" alt="Dog Image" onclick="toggleSpecs(13)">
+		<ul class="specs" id="specs13">
+			<li><strong>Breed:</strong> Chow Chow </li>
+			<li><strong>Gender:</strong> Male/Female</li>
+			<li><strong>Age:</strong>1</li>
+			<li><strong>Weight:</strong> 65 lbs</li>
+			<li><strong>Color:</strong> Red, Fawn, Blue, Cinnamon </li>
+			<li><h4><strong>PRICE:</strong></h4>45,000/-</li>
+		</ul>
+		</div>
+		<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+	</section>
+	<section class="dog-listing">
+		<div id="item14">
+		<h2> Saint Bernard</h2>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkd_JY1Bb0_ITf8v9BqP7dQCsqa1mJFw8UAA&usqp=CAU" alt="Dog Image" onclick="toggleSpecs(14)">
+		<ul class="specs" id="specs14">
+			<li><strong>Breed:</strong> Saint Bernard </li>
+			<li><strong>Gender:</strong> Male/Female</li>
+			<li><strong>Age:</strong>1</li>
+			<li><strong>Weight:</strong> 100 lbs</li>
+			<li><strong>Color:</strong> Brownish-Yellow , Reddish-brown Brindle </li>
+			<li><h4><strong>PRICE:</strong></h4>22,000/-</li>
+		</ul>
+		</div>
+		<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+	</section>
+	<section class="dog-listing">
+		<div id="item15">
+		<h2> Dobermann</h2>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxn-xLyOJp6fmU39ztLwf7QevzCx0J4b-qtA&usqp=CAU" alt="Dog Image" onclick="toggleSpecs(15)">
+		<ul class="specs" id="specs15">
+			<li><strong>Breed:</strong> Dobermann </li>
+			<li><strong>Gender:</strong> Male/Female</li>
+			<li><strong>Age:</strong>1</li>
+			<li><strong>Weight:</strong> 65 lbs</li>
+			<li><strong>Color:</strong> Red-Rust, Black </li>
+			<li><h4><strong>PRICE:</strong></h4>25,000/-</li>
+		</ul>
+		</div>
+		<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+	</section>
+	<section class="dog-listing">
+		<div id="item16">
+		<h2> Great Dane</h2>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWIwE2aPGzcae4Y5_0Zmm7eaU1SamcYr8X-A&usqp=CAU" alt="Dog Image" onclick="toggleSpecs(16)">
+		<ul class="specs" id="specs16">
+			<li><strong>Breed:</strong> Great Dane </li>
+			<li><strong>Gender:</strong> Male/Female</li>
+			<li><strong>Age:</strong>1</li>
+			<li><strong>Weight:</strong> 90 lbs</li>
+			<li><strong>Color:</strong> Brindle,Fawn, Black </li>
+			<li><h4><strong>PRICE:</strong></h4>18,000/-</li>
+		</ul>
+		</div>
+		<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+	</section>
+	<section class="dog-listing">
+		<div id="item17">
+		<h2> Pugs </h2>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGZ-uPZBDDl6y3vk_jnGDod1GyLEPRzU39SA&usqp=CAU" alt="Dog Image" onclick="toggleSpecs(17)">
+		<ul class="specs" id="specs17">
+			<li><strong>Breed:</strong> Pugs </li>
+			<li><strong>Gender:</strong> Male/Female</li>
+			<li><strong>Age:</strong>1</li>
+			<li><strong>Weight:</strong> 17 lbs</li>
+			<li><strong>Color:</strong> Silver,Fawn, Black </li>
+			<li><h4><strong>PRICE:</strong></h4>15,000/-</li>
+		</ul>
+		</div>
+		<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+	</section>
+	<section class="dog-listing">
+		<div id="item18">
+		<h2> Chihuahuas </h2>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThN4KEVQOrdhmZGalBzeRfP4T4H-dC8OVccQ&usqp=CAU" alt="Dog Image" onclick="toggleSpecs(18)">
+		<ul class="specs" id="specs18">
+			<li><strong>Breed:</strong> Chihuahuas </li>
+			<li><strong>Gender:</strong> Male/Female</li>
+			<li><strong>Age:</strong>1</li>
+			<li><strong>Weight:</strong> 6 lbs</li>
+			<li><strong>Color:</strong> White,Fawn, Black </li>
+			<li><h4><strong>PRICE:</strong></h4>1,00,000/-</li>
+		</ul>
+		</div>
+		<button class="adopt-btn"><a onclick="generatePrompt()">ADOPT ME</a></button>
+	</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Dog Adoption Website. All Rights Reserved.</p>
+	</footer>
+	
+	<script>
+		function toggleSpecs(id) {
+			var specs = document.getElementById("specs" + id);
+			if (specs.style.display === "none") {
+				specs.style.display = "block";
+			} else {
+				specs.style.display = "none";
+			}
+		}
+	</script>
+	<script>
+	const dogListings = document.querySelectorAll('.dog-listing');
+	
+	function search() {
+	  const searchTerm = document.getElementById('find').value.toLowerCase();
+	
+	  dogListings.forEach(listing => {
+		const breed = listing.querySelector('h2').textContent.toLowerCase();
+		if (breed.includes(searchTerm)) {
+		  listing.style.display = 'block';
+		} else {
+		  listing.style.display = 'none';
+		}
+	  });
+	}
+	</script>
+	<script type="text/javascript">
+        function generatePrompt() {
+            alert("YAYY! ADOPTED");
+        }
+    </script>
+	<script src="adopt.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
